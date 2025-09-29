@@ -1,0 +1,111 @@
+import slideImage1 from "@/assets/img/slider/slide-1.jpg";
+import slideImage2 from "@/assets/img/slider/slide-2.jpg";
+import slideImage3 from "@/assets/img/slider/slide-3.jpg";
+import slideImage4 from "@/assets/img/slider/slide-4.jpg";
+
+export const homePageBannersData = [
+  {
+    id: 1,
+    project_name: "Armario",
+    completed_title: "Completado en 2022",
+    address: "Bogotá, Colombia",
+    price: "2,895",
+    theme_style: "Industrial",
+    architect: "Hugo Ríos",
+    image: slideImage1,
+  },
+  {
+    id: 2,
+    project_name: "Baño",
+    completed_title: "Completado en 2023",
+    address: "Bogotá, Colombia",
+    price: "1,895",
+    theme_style: "Residencial",
+    architect: "Hugo Ríos",
+    image: slideImage2,
+  },
+  {
+    id: 3,
+    project_name: "Cocina",
+    completed_title: "Completado en 2022",
+    address: "Bogotá, Colombia",
+    price: "2,215",
+    theme_style: "Mediterráneo",
+    architect: "Hugo Ríos",
+    image: slideImage3,
+  },
+  {
+    id: 4,
+    project_name: "Cocina",
+    completed_title: "Completado en 2022",
+    address: "Bogotá, Colombia",
+    price: "2,215",
+    theme_style: "Mediterráneo",
+    architect: "Hugo Ríos",
+    image: slideImage4,
+  },
+];
+
+import testimonialImg2 from "@/assets/img/testimonial/2.png";
+import testimonialImg1 from "@/assets/img/testimonial/1.png";
+
+export const testimonialOneData = [
+  {
+    id: 1,
+    content:
+      "Contraté a MOD Arq para diseñar y construir la casa de mis sueños, y no podría estar más feliz con el resultado. Desde la consulta inicial hasta la inspección final, el equipo de MOD Arq fue profesional.",
+    author: "Paul Scholes",
+    location: "Manchester, Reino Unido",
+    image: testimonialImg2,
+  },
+  {
+    id: 2,
+    content:
+      "Contraté a MOD Arq para diseñar y construir la casa de mis sueños, y no podría estar más feliz con el resultado. Desde la consulta inicial hasta la inspección final, el equipo de MOD Arq fue profesional.",
+    author: "Lisa Ray",
+    location: "Nueva York, EE.UU.",
+    image: testimonialImg1,
+  },
+];
+
+// Import testimonial images
+import testimonial2Img4 from "@/assets/img/testimonial/4.jpg";
+import testimonial2Img5 from "@/assets/img/testimonial/5.jpg";
+import testimonial2Img6 from "@/assets/img/testimonial/6.jpg";
+import testimonial2Img7 from "@/assets/img/testimonial/7.jpg";
+
+// Testimonial Data
+export const testimonialsTwoData = [
+  {
+    id: 1,
+    name: "Ryans Gigs",
+    position: "Director Gerente",
+    image: testimonial2Img4,
+    review:
+      "Me impresionó especialmente su atención al detalle y su capacidad para incorporar elementos de diseño únicos que realmente hacen que mi hogar sea único.",
+  },
+  {
+    id: 2,
+    name: "Paul Scholes",
+    position: "Director",
+    image: testimonial2Img5,
+    review:
+      "Me impresionó especialmente su atención al detalle y su capacidad para incorporar elementos de diseño únicos que realmente hacen que mi hogar sea único.",
+  },
+  {
+    id: 3,
+    name: "Alex Ferguson",
+    position: "Director Ejecutivo",
+    image: testimonial2Img6,
+    review:
+      "Me impresionó especialmente su atención al detalle y su capacidad para incorporar elementos de diseño únicos que realmente hacen que mi hogar sea único.",
+  },
+  {
+    id: 4,
+    name: "Eric Cantona",
+    position: "Asesor Principal",
+    image: testimonial2Img7,
+    review:
+      "Me impresionó especialmente su atención al detalle y su capacidad para incorporar elementos de diseño únicos que realmente hacen que mi hogar sea único.",
+  },
+];

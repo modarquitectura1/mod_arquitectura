@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proyectos",
+  "info": {
+    "singularName": "proyecto",
+    "pluralName": "proyectos",
+    "displayName": "Proyecto"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 150,
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nombre",
+      "required": true
+    },
+    "descripcionCorta": {
+      "type": "text",
+      "minLength": 15,
+      "required": true
+    },
+    "categoria": {
+      "type": "string",
+      "required": true
+    },
+    "imagenes": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ImagenPrincipal": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "fecha": {
+      "type": "date",
+      "required": true
+    },
+    "Ubicacion": {
+      "type": "string",
+      "minLength": 2,
+      "required": true
+    },
+    "DescripcionLarga": {
+      "type": "text",
+      "required": false
+    }
+  }
+}
