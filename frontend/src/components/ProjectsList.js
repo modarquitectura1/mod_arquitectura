@@ -35,7 +35,8 @@ export function RenderPosts({ posts }) {
                       day: "numeric",
                     })}
                   </p>
-                  <h2 className="project-title">{post.title}</h2>
+                  {/* TODO: cambiar titulo */}
+                  <h2 className="project-title">{post.nombre}</h2>
                   <p className="project-description">{post.descripcionCorta}</p>
                 </div>
                 <div className="project-card-footer">

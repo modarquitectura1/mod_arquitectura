@@ -54,7 +54,7 @@ export default function About() {
       {/* <FeatureLineSection /> */}
 
       {/*FAQ Section*/}
-      <FaqSection />
+      {/* <FaqSection /> */}
     </>
   );
 }

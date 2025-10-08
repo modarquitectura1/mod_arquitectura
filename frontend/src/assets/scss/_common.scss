@@ -1,13 +1,11 @@
-
 /*-- Google Font Import 
 -----------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap");
 
 // font-family: 'Outfit', sans-serif;
 // font-family: 'Jost', sans-serif;
-
 
 /*--
     - Common CSS 
@@ -38,12 +36,11 @@ h4,
 h5,
 h6 {
   position: relative;
-  color: $primary_color;
+  color: $body_text;
   font-family: $outfit;
   font-weight: 400;
   margin: 0;
 }
-
 
 a {
   text-decoration: none;
@@ -52,7 +49,7 @@ a {
   font-weight: 400;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  color: $primary_color;
+  color: $body_text;
   &:hover {
     color: #333;
   }
@@ -132,7 +129,6 @@ hr {
   margin: 0 auto;
 }
 
-
 /*Section Padding CSS*/
 
 .section-padding {
@@ -146,9 +142,7 @@ hr {
   @media #{$xs} {
     padding: 100px 10px;
   }
-  
 }
-
 
 /*Margin & Padding */
 
@@ -493,13 +487,12 @@ hr {
   }
 }
 
-
 .section-title h2 {
   font-size: 75px;
   font-weight: 500;
   line-height: 80px;
   letter-spacing: -1px;
-  color: $primary_color;
+  color: $body_text;
 
   @media #{$lg} {
     font-size: 60px;
@@ -521,7 +514,7 @@ hr {
 }
 
 .section-title h2 span {
-  color: #E8E3DF;
+  color: #e8e3df;
 }
 
 .section-title h3 {
@@ -552,7 +545,7 @@ hr {
   color: #ddd;
   font-size: 80px;
   @media #{$xs} {
-    font-size: 40px;    
+    font-size: 40px;
   }
 }
 
@@ -566,16 +559,15 @@ hr {
   color: #fff;
 }
 
-
 .section-title img {
   border-radius: 50px;
   height: 60px;
   position: relative;
   bottom: 5px;
-  @media #{$md}{
+  @media #{$md} {
     display: none;
   }
-  @media #{$xs}{
+  @media #{$xs} {
     display: none;
   }
 }
@@ -590,24 +582,24 @@ hr {
 
 .theme-btn {
   display: inline-flex;
-  color: $primary_color;
+  color: $body_text;
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
   padding: 18px 35px;
-  border: 1px solid $primary_color;
+  border: 1px solid $body_text;
   border-radius: 50px;
   text-align: center;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  @media #{$xs} {        
-		padding: 15px 32px;
-	} 
-  &:hover{
-    background: $primary_color;
-    border-color: $primary_color;
-    color: #fff;    
+  @media #{$xs} {
+    padding: 15px 32px;
+  }
+  &:hover {
+    background: $body_text;
+    border-color: $body_text;
+    color: #fff;
   }
 }
 
@@ -617,22 +609,21 @@ hr {
   padding-left: 5px;
   position: relative;
   top: 1px;
-  &:hover{
+  &:hover {
     transform: rotate(0);
   }
 }
 
-.white-btn{
+.white-btn {
   @extend .theme-btn;
-  border-color: #fff;  
+  border-color: #fff;
   color: #fff;
-  &:hover{
+  &:hover {
     background: #fff;
     border-color: #fff;
     color: #171717;
   }
 }
-
 
 /*Form Style CSS */
 
@@ -658,7 +649,7 @@ button[type="submit"] {
   border: none;
   border-radius: 0;
   display: inline-block;
-  color: #171717;  
+  color: #171717;
   width: 115px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -669,7 +660,7 @@ button[type="submit"] {
 
 input[type="submit"]:hover,
 button[type="submit"]:hover {
-  background: $primary_color;
+  background: $body_text;
   color: #fff;
 }
 
@@ -677,7 +668,7 @@ input::placeholder,
 textarea::placeholder {
   font-size: 16px;
   font-weight: 400;
-  @media #{$xs}{
+  @media #{$xs} {
     font-size: 14px;
   }
 }
@@ -744,34 +735,33 @@ input.form-control {
 
 .overlay-2 {
   @extend .overlay;
-  opacity: .2;
+  opacity: 0.2;
 }
 .overlay-3 {
   @extend .overlay;
-  opacity: .3;
+  opacity: 0.3;
 }
 .overlay-4 {
   @extend .overlay;
-  opacity: .4;
+  opacity: 0.4;
 }
 .overlay-5 {
   @extend .overlay;
-  opacity: .5;
+  opacity: 0.5;
 }
 
-
 .overlay.active {
-	position: fixed;
-	right: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	content: "";
-	background-color: #000;
-	z-index: 99;
-	opacity: 0.5;
-	visibility: visible;
-  }
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background-color: #000;
+  z-index: 99;
+  opacity: 0.5;
+  visibility: visible;
+}
 
 .text-black {
   color: $primary_color !important;
@@ -794,7 +784,6 @@ input.form-control {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 
 /* Preloader*/
 
@@ -873,9 +862,9 @@ input.form-control {
   transform: translateZ(0);
   visibility: hidden;
   text-align: center;
-  @media #{$xs} {        
-		display: none;
-	}
+  @media #{$xs} {
+    display: none;
+  }
 }
 
 .cursor-outer {
@@ -1040,8 +1029,8 @@ input.form-control {
   width: 50%;
 }
 
-.search-popup .form-group input[type=text],
-.search-popup .form-group input[type=search] {
+.search-popup .form-group input[type="text"],
+.search-popup .form-group input[type="search"] {
   position: relative;
   display: block;
   font-size: 18px;
@@ -1057,7 +1046,7 @@ input.form-control {
   margin-bottom: 5px;
 }
 
-.search-popup .form-group input[type=submit],
+.search-popup .form-group input[type="submit"],
 .search-popup .form-group button {
   position: absolute;
   right: -25px;
@@ -1078,11 +1067,11 @@ input.form-control {
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration { display: none; }
-
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
 
 // Off Canvas Menu CSS
-
 
 .header-btn {
   display: flex;
@@ -1256,16 +1245,16 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all .4s ease-in .4s;
-  -o-transition: all .4s ease-in .4s;
-  transition: all .4s ease-in .4s;
+  -webkit-transition: all 0.4s ease-in 0.4s;
+  -o-transition: all 0.4s ease-in 0.4s;
+  transition: all 0.4s ease-in 0.4s;
 }
 
 .offcanvas-overlay.active {
   opacity: 1;
   visibility: visible;
   left: 0;
-  transition: all .8s ease-out 0s;
+  transition: all 0.8s ease-out 0s;
 }
 
 .extra-info .site-logo-2 {
@@ -1293,7 +1282,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   background: #000;
 }
 
-// Header Sticky 
+// Header Sticky
 
 .header-sticky {
   position: fixed;
@@ -1309,10 +1298,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   z-index: 999;
 }
 
-.absolute-header .header-sticky{
+.absolute-header .header-sticky {
   background: #141417;
 }
-
 
 .directon-sign i {
   font-size: 80px;
@@ -1426,7 +1414,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
 }
-.z-9999{
+.z-9999 {
   z-index: 9999;
 }
 @-webkit-keyframes rotateCircle {

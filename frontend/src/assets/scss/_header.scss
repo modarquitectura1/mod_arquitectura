@@ -23,7 +23,7 @@
       font-size: 30px;
       font-weight: 500;
       letter-spacing: 1px;
-      color: $primary_color;
+      color: $body_text;
       border-right: 1px solid #eee;
       overflow: hidden;
       @media #{$md} {
@@ -281,7 +281,7 @@
   .sidebar-nav .metismenu a:active {
     text-decoration: none;
     color: #f8f9fa;
-    background: $primary_color;
+    background: $body_text;
   }
 }
 

@@ -71,9 +71,6 @@ export default function ProjectSectionThree({
                       >
                         <div className="featured-work-inner">
                           <div className="fetured-work-bg"></div>
-                          <Link href="/projects/1" className="details-link">
-                            <i className="las la-arrow-right"></i>
-                          </Link>
                           <div className="featured-work-info">
                             <h2>{project.number}</h2>
                             <h4>{project.title}</h4>

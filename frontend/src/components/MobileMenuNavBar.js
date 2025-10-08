@@ -50,14 +50,14 @@ export default function MobileMenuNavBar({ menuItems }) {
 
           {/* Mobile Action Bar */}
           <div className="action-bar">
-            <a href="mailto:info@MOD Arq.com">
-              <i className="las la-envelope" /> info@MOD Arq.com
+            <a href="mailto:modarquitectura1@gmail.com">
+              <i className="las la-envelope" /> modarquitectura1@gmail.com
             </a>
-            <a href="tel:123-456-7890">
-              <i className="fal fa-phone" /> 123-456-7890
+            <a href="tel:+573002814117">
+              <i className="fal fa-phone" /> 3002814117
             </a>
             <Link href="/contacto" className="white-btn">
-              Contact Us
+              Contactanos
             </Link>
           </div>
         </div>

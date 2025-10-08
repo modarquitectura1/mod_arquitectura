@@ -19,7 +19,7 @@
     h5 {
       font-size: 45px;
       font-weight: 400;
-      color: #9f9f9f;
+      color: $body_text;
       transition: 0.4s linear;
 
       span {
@@ -81,7 +81,7 @@
     }
 
     &:hover h5 {
-      color: $primary_color;
+      color: $body_text;
     }
 
     &:hover h5 span {
@@ -479,7 +479,7 @@
   bottom: 35px;
   left: -220px;
   max-width: 410px;
-  background: #f1f1f1;
+  background: $primary_color;
   padding: 50px;
   z-index: 2;
   @media #{$md} {
