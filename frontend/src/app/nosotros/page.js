@@ -19,10 +19,8 @@ import AboutCEOSection from "@/components/PageSections/AboutCEOSection";
 const menus = [{ label: "Nosotros", to: "" }];
 
 export const metadata = {
-  title:
-    "About Us - MOD Arq | Architecture &amp; Interior Design Next Js Template",
-  description:
-    "About Us - MOD Arq | Architecture &amp; Interior Design Next Js Template",
+  title: "Sobre nosotros - MOD Arq",
+  description: "Sobre nosotros - MOD Arq",
 };
 
 export default function About() {

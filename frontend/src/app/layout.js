@@ -22,8 +22,9 @@ import BackToTop from "@/components/BackToTop";
 import WhatsappButton from "@/components/WhatsAppButton";
 
 export const metadata = {
-  title: "MOD Arq | Architecture &amp; Interior Design Next Js Template",
-  description: "MOD Arq | Architecture &amp; Interior Design Next Js Template",
+  title: "MOD Arquitectura",
+  description:
+    "MOD Arquitectura, empresa de arquitectura construcción y diseño de interiores.",
 };
 
 export default function RootLayout({ children }) {
