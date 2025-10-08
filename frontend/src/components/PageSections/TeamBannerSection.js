@@ -1,4 +1,4 @@
-import teamBg from "@/assets/img/team/team-bg.jpg";
+import teamBg from "@/assets/img/about/about-2.jpg";
 
 export default function TeamBannerSection() {
   return (
@@ -16,14 +16,14 @@ export default function TeamBannerSection() {
                 <h2>Conoce a nuestro equipo</h2>
               </div>
               <h3>
-                MOD Arq es un equipo profesional <br /> de arquitectos y
-                diseñadores de interior
+                MOD Arquitectura es un equipo profesional <br /> de arquitectos
+                y diseñadores de interior
               </h3>
               <p>
-                Somos apasionados por crear espacios hermosos y funcionales.
-                Creemos que el buen diseño debe ser accesible para todos, y
-                trabajamos arduamente para hacer realidad la visión de nuestros
-                clientes.
+                MOD ARQUITECTURA está conformado por arquitectos, diseñadores y
+                técnicos en construcción apasionados por generar espacios que
+                inspiren. Cada miembro aporta su especialidad: diseño interior,
+                visualización, obra estructural, gestión de acabados.
               </p>
             </div>
           </div>

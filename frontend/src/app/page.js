@@ -14,6 +14,9 @@ import ProjectSection from "@/components/PageSections/ProjectSection";
 import ContactSection from "@/components/PageSections/ContactSection";
 import ProjectSectionThree from "@/components/PageSections/ProjectSectionThree";
 import AboutSectionTwo from "@/components/PageSections/AboutSectionTwo";
+import WhatsappButton from "@/components/WhatsAppButton";
+import TeamSectionThree from "@/components/PageSections/TeamSectionThree";
+import AboutCEOSection from "@/components/PageSections/AboutCEOSection";
 
 export default function Home() {
   return (
@@ -22,7 +25,7 @@ export default function Home() {
       <HeroAreaSection />
 
       {/*Client Section*/}
-      <ClientSection customClass={"pt-100 pb-0"} />
+      {/* <ClientSection customClass={"pt-100 pb-0"} /> */}
 
       {/*About Area*/}
       <AboutSectionTwo />
@@ -48,8 +51,7 @@ export default function Home() {
       {/*Testimonial Section*/}
       <TestimonialSection customClass={"pt-0"} />
 
-      {/*Team Section*/}
-      <TeamSection />
+      <AboutCEOSection />
 
       {/*CTA Area*/}
       {/* <CtaAreaSection /> */}

@@ -1,13 +1,13 @@
 import Image from "next/image";
-import aboutImage from "@/assets/img/about/about-2.jpg";
+import aboutImage from "@/assets/img/ceo.jpg";
 import Link from "next/link";
 
-export default function AboutSectionTwo() {
+export default function AboutCEOSection() {
   return (
     <div className="about-section section-padding">
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-xl-7 col-lg-7 order-2 order-xl-1">
+          <div className="col-xl-6 col-lg-7 order-2 order-xl-1">
             <div className="about-bg-wrap">
               <Image src={aboutImage} alt="" style={{ height: "auto" }} />
             </div>
@@ -16,9 +16,7 @@ export default function AboutSectionTwo() {
             <div className="about-content-wrapper">
               <div className="section-title">
                 <div className="heading-animation">
-                  <h2>
-                    Sobre <span>/</span> <br /> MOD Arquitectura
-                  </h2>
+                  <h2>Nuestro CEO</h2>
                 </div>
               </div>
               <div className="heading-animation">

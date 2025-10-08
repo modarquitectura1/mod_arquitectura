@@ -14,8 +14,9 @@ import ServiceSectionThree from "@/components/PageSections/ServiceSectionThree";
 import ServiceSectionTwo from "@/components/PageSections/ServiceSectionTwo";
 import ServiceSection from "@/components/PageSections/ServiceSection";
 import TeamSection from "@/components/PageSections/TeamSection";
+import AboutCEOSection from "@/components/PageSections/AboutCEOSection";
 
-const menus = [{ label: "About", to: "" }];
+const menus = [{ label: "Nosotros", to: "" }];
 
 export const metadata = {
   title:
@@ -46,10 +47,9 @@ export default function About() {
       <CounterSection customClass={"pt-0 pb-50"} />
 
       {/*Team Section*/}
-      <TeamSection />
+      {/* <TeamSection /> */}
 
-      {/*Award Section*/}
-      {/* <AwardSection /> */}
+      <AboutCEOSection />
 
       {/* <FeatureLineSection /> */}
 

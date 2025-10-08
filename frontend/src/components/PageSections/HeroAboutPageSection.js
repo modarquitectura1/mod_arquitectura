@@ -29,16 +29,20 @@ export default function HeroAboutPageSection() {
             {/* MOD Arq fue fundada en 1995 en California, EE.UU. La empresa fue
             establecida por Louis Skidmore y Nathaniel Owings, y posteriormente
             se unió John O. Merrill. */}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quisquam, quos.
+            MOD ARQUITECTURA nació con la pasión de ofrecer soluciones
+            arquitectónicas integrales en Cali, Valle del Cauca. Con un enfoque
+            centrado en el cliente, combinamos creatividad y rigor técnico para
+            diseñar, construir y remodelar espacios residenciales únicos. Cada
+            proyecto refleja nuestra visión: funcionalidad, estética y
+            compromiso con la comunidad.
           </p>
           <p>
-            {/* La empresa ha diseñado el John Hancock Center, el One World Trade
-            Center y el Burj Khalifa, que actualmente es el edificio más alto
-            del mundo. A lo largo de su historia, MOD Arq ha sido reconocida por
-            sus diseños innovadores y su compromiso con la sostenibilidad. */}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Desde remodelaciones de apartamentos hasta viviendas totalmente
+            nuevas y proyectos de carpintería a medida, nuestra experiencia nos
+            ha permitido consolidarnos como una de las firmas de arquitectura
+            con mayor reconocimiento local. Nos basamos en valores de
+            transparencia, calidad y diseño emocional, siempre teniendo en
+            cuenta el contexto climático, cultural y urbano de Cali.
           </p>
         </div>
       </div>

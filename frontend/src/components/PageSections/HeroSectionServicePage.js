@@ -13,8 +13,8 @@ export default function HeroSectionServicePage() {
             <div className="hero-area-content">
               <div className="section-title">
                 <span className="meta">
-                  Since 2000 <br />
-                  Architecture & Interior
+                  Desde el 2000 <br />
+                  Arquitectura & Interior
                 </span>
                 <br />
                 <h1 className="second_line">

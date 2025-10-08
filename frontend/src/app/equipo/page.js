@@ -4,6 +4,7 @@ import TeamSectionThree from "@/components/PageSections/TeamSectionThree";
 import NewsletterSection from "@/components/PageSections/NewsletterSection";
 import CtaAreaSection from "@/components/PageSections/CtaAreaSection";
 import TeamSection from "@/components/PageSections/TeamSection";
+import AboutCEOSection from "@/components/PageSections/AboutCEOSection";
 
 const menus = [{ label: "Equipo", to: "" }];
 
@@ -17,7 +18,8 @@ export default function Team() {
       <TeamBannerSection />
 
       {/*Team Section*/}
-      <TeamSection />
+      {/* <TeamSection /> */}
+      <AboutCEOSection />
 
       {/*Newsletter Section*/}
       <CtaAreaSection />

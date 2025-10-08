@@ -1,0 +1,168 @@
+// Project Details Section Styles
+// Fix mobile layout overlap issues
+
+.project-details-wrap {
+  .project-overview-row {
+    // Force vertical layout on mobile
+    @media #{$xs} {
+      flex-direction: column !important;
+
+      .col-xl-6,
+      .col-lg-6 {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  // Project image section
+  .project-image-section {
+    @media #{$xs} {
+      order: 1;
+      margin-bottom: 2rem;
+    }
+  }
+
+  // Project details section
+  .project-details-section {
+    @media #{$xs} {
+      order: 2;
+    }
+  }
+
+  // Project background image
+  .project-bg {
+    @media #{$xs} {
+      height: auto !important;
+      min-height: 300px;
+
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+
+  // Project brief wrap (overlay on image)
+  .project-brief-wrap {
+    @media #{$xs} {
+      position: static !important;
+      width: 100% !important;
+      background: #171717 !important;
+      margin-top: 1rem;
+      border-radius: 0.5rem;
+      padding: 1.5rem !important;
+    }
+  }
+
+  // Project details inner
+  .project-details-inner {
+    @media #{$xs} {
+      margin-top: 0 !important;
+      padding-left: 0 !important;
+      height: auto !important;
+    }
+  }
+
+  // Section title adjustments
+  .section-title {
+    @media #{$xs} {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      text-align: left !important;
+      margin-bottom: 1.5rem;
+
+      h1 {
+        font-size: 2rem !important;
+        line-height: 2.5rem !important;
+        margin-bottom: 0.5rem;
+      }
+
+      h6 {
+        font-size: 1rem;
+        text-align: left !important;
+      }
+    }
+  }
+
+  // Project details info
+  .project-details-info {
+    @media #{$xs} {
+      padding: 1.5rem 0 !important;
+    }
+  }
+
+  // Single info items
+  .single-info {
+    @media #{$xs} {
+      margin-bottom: 1rem;
+
+      p {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 0.25rem;
+      }
+
+      h4 {
+        font-size: 1.1rem;
+        color: $primary_color;
+        margin: 0;
+      }
+    }
+  }
+
+  // Project description
+  .project-desc {
+    @media #{$xs} {
+      text-align: left !important;
+      padding-left: 0 !important;
+      margin-top: 1.5rem;
+
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: $body_text;
+      }
+    }
+  }
+
+  // Single brief items
+  .single-brief {
+    @media #{$xs} {
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      h6 {
+        font-size: 0.9rem;
+        margin-bottom: 0.25rem;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+// Ensure proper spacing between sections
+.project-details-wrap .container {
+  @media #{$xs} {
+    padding: 0 1rem;
+  }
+}
+
+// Fix any potential overflow issues
+.project-details-wrap {
+  @media #{$xs} {
+    overflow-x: hidden;
+  }
+}
+

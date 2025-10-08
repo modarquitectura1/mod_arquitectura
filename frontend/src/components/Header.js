@@ -36,7 +36,7 @@ export default function Header() {
               {/* Logo */}
               <Link href="/" className="logo">
                 {/* MOD Arq. */}
-                <Image src={logo} alt="logo" width={150} />
+                <Image src={logo} alt="logo" width={200} />
               </Link>
 
               {/* Desktop Menu */}

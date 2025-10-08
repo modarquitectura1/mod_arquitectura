@@ -22,11 +22,10 @@ export default function ProcessSection({ customClass }) {
                   01<i className="las la-arrow-right"></i>
                 </h2>
               </div>
-              <h4>Consultación Inicial </h4>
+              <h4>Escucha y asesoría inicial</h4>
               <p>
-                Maecenas fermentum maximus dui aliquet mollis. Suspendisse leo
-                lorem, tincidunt dictum interdum eu, fringilla non orci. Duis
-                condimentum leo sit amet massa imperdiet.
+                Analizamos tus ideas y necesidades para ofrecerte una propuesta
+                clara y ajustada a tu estilo de vida y presupuesto.
               </p>
             </div>
           </div>
@@ -40,11 +39,10 @@ export default function ProcessSection({ customClass }) {
                   02<i className="las la-arrow-right"></i>
                 </h2>
               </div>
-              <h4>Diseño Conceptual </h4>
+              <h4>Diseño y planeación arquitectónica </h4>
               <p>
-                Praesent eget eros eget nisl lacinia pretium. Phasellus mi
-                ligula, luctus quis leo ac, efficitur aliquet nulla. Sed
-                vehicula, tellus ut volutpat finibus, ex sem.
+                Creamos planos y propuestas de diseño arquitectónico,
+                priorizando funcionalidad, estética y normativas locales.
               </p>
             </div>
           </div>
@@ -58,11 +56,10 @@ export default function ProcessSection({ customClass }) {
                   03<i className="las la-arrow-right"></i>
                 </h2>
               </div>
-              <h4>Construcción</h4>
+              <h4>Visualización 3D y ajustes</h4>
               <p>
-                Phasellus at lobortis nisi, sed sollicitudin diam. Vivamus
-                fringilla sit amet eros in hendrerit. Fusce cursus interdum
-                risus, et lacinia mi ultrices ac. Morbi quis.
+                Presentamos renders y modelos 3D realistas para que veas tu
+                proyecto antes de la construcción y puedas hacer ajustes.
               </p>
             </div>
           </div>
@@ -81,11 +78,10 @@ export default function ProcessSection({ customClass }) {
                   04<i className="las la-arrow-right"></i>
                 </h2>
               </div>
-              <h4>Finalización</h4>
+              <h4>Construcción y ejecución en obra</h4>
               <p>
-                Vestibulum vitae consequat enim. Nam ac massa ac risus convallis
-                fringilla eu varius nunc. Phasellus congue sodales est, ut
-                condimentum mi efficitur id. In euismod.
+                Nos encargamos de todo el proceso constructivo con supervisión
+                constante, materiales de calidad y cumplimiento de tiempos.
               </p>
             </div>
           </div>
@@ -99,11 +95,11 @@ export default function ProcessSection({ customClass }) {
                   05<i className="las la-arrow-right"></i>
                 </h2>
               </div>
-              <h4>Seguimiento</h4>
+              <h4>Entrega y acompañamiento final</h4>
               <p>
-                Etiam ornare mauris eros, sed molestie turpis vulputate nec. Nam
-                porta, magna at posuere tincidunt, dolor tellus viverra orci,
-                faucibus tristique nunc ante vel enim.
+                Te entregamos tu proyecto listo, garantizando acabados
+                impecables y acompañamiento posterior para asegurar tu
+                satisfacción.
               </p>
             </div>
           </div>

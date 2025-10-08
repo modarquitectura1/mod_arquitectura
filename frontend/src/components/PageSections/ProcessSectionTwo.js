@@ -39,7 +39,7 @@ export default function ProcessSectionTwo() {
                         aria-expanded="true"
                         aria-controls="collapseOne"
                       >
-                        <span>01.</span>Discussion
+                        <span>01.</span>Experiencia local
                       </button>
                     </h2>
                     <div
@@ -49,9 +49,9 @@ export default function ProcessSectionTwo() {
                       data-bs-parent="#accordionExample"
                     >
                       <div className="accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                        quam lectus, facilisis auctor, ultrices ut, elementum
-                        vulputate, nunc.
+                        conocedores de normativas locales, clima, materiales
+                        accesibles, estilos arquitectónicos preferidos en Cali y
+                        el Valle del Cauca.
                       </div>
                     </div>
                   </div>
@@ -65,7 +65,8 @@ export default function ProcessSectionTwo() {
                         aria-expanded="false"
                         aria-controls="collapseTwo"
                       >
-                        <span>02.</span>Design
+                        <span>02.</span>Proceso de diseño claro
+                        <br /> y participativo
                       </button>
                     </h2>
                     <div
@@ -75,9 +76,8 @@ export default function ProcessSectionTwo() {
                       data-bs-parent="#accordionExample"
                     >
                       <div className="accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                        quam lectus, facilisis auctor, ultrices ut, elementum
-                        vulputate, nunc.
+                        desde la idea inicial, bocetos, renders 3D, hasta
+                        entrega final del proyecto.
                       </div>
                     </div>
                   </div>
@@ -91,7 +91,8 @@ export default function ProcessSectionTwo() {
                         aria-expanded="false"
                         aria-controls="collapseThree"
                       >
-                        <span>03.</span>Development
+                        <span>03.</span>Atención a la calidad
+                        <br /> en cada detalle
                       </button>
                     </h2>
                     <div
@@ -101,9 +102,8 @@ export default function ProcessSectionTwo() {
                       data-bs-parent="#accordionExample"
                     >
                       <div className="accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                        quam lectus, facilisis auctor, ultrices ut, elementum
-                        vulputate, nunc.
+                        Locontrol de obra, elección de acabados, supervisión
+                        continua para que el resultado supere expectativas.
                       </div>
                     </div>
                   </div>
@@ -117,7 +117,7 @@ export default function ProcessSectionTwo() {
                         aria-expanded="false"
                         aria-controls="collapseFour"
                       >
-                        <span>04.</span>Production
+                        <span>04.</span>Tiempo y cumplimiento
                       </button>
                     </h2>
                     <div
@@ -127,9 +127,7 @@ export default function ProcessSectionTwo() {
                       data-bs-parent="#accordionExample"
                     >
                       <div className="accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                        quam lectus, facilisis auctor, ultrices ut, elementum
-                        vulputate, nunc.
+                        cronogramas realistas y compromiso con entrega.
                       </div>
                     </div>
                   </div>

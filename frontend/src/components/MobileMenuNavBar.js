@@ -13,7 +13,7 @@ export default function MobileMenuNavBar({ menuItems }) {
   }, []);
 
   return (
-    <div className="mobile-nav-bar d-block col-sm-1 col-6 d-lg-none">
+    <div className="mobile-nav-bar d-block col-sm-1 col-2 d-lg-none">
       <div className="mobile-nav-wrap">
         <div id="hamburger">
           <i className="las la-bars" />
@@ -56,15 +56,12 @@ export default function MobileMenuNavBar({ menuItems }) {
             <a href="tel:123-456-7890">
               <i className="fal fa-phone" /> 123-456-7890
             </a>
-            <Link href="/contact" className="white-btn">
+            <Link href="/contacto" className="white-btn">
               Contact Us
             </Link>
           </div>
         </div>
       </div>
-
-      {/* Overlay for Mobile Menu */}
-      <div className="overlay" />
     </div>
   );
 }

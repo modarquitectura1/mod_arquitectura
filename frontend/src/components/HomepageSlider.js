@@ -45,29 +45,29 @@ export default function HomepageSlides() {
             <div className="project-dtl-wrap float-end end-0">
               <div className="project-dtl-info dark-bg">
                 <div className="project-title">
-                  <h6>Latest Project</h6>
-                  <h2 className="text-white">{banner.project_name}</h2>
+                  <h6>Último Proyecto</h6>
+                  <h3 className="text-white">{banner.project_name}</h3>
                   <p>{banner.completed_title}</p>
                 </div>
                 <div className="project-info-wrap">
                   <div className="row gx-0">
                     <div className="col-xl-6 col-lg-6 col-md-6">
                       <div className="single-project-info">
-                        <p>Location</p>
+                        <p>Ubicación</p>
                         <h6>{banner.address}</h6>
                       </div>
                       <div className="single-project-info">
-                        <p>Price</p>
+                        <p>Precio Aprox.</p>
                         <h6>${banner.price}</h6>
                       </div>
                     </div>
                     <div className="col-xl-6 col-lg-6 col-md-6">
                       <div className="single-project-info">
-                        <p>Theme & Style</p>
+                        <p>Categoria</p>
                         <h6>{banner.theme_style}</h6>
                       </div>
                       <div className="single-project-info">
-                        <p>Architect</p>
+                        <p>Arquitecto</p>
                         <h6>{banner.architect}</h6>
                       </div>
                     </div>

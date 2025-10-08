@@ -14,7 +14,7 @@ export default function HeroAreaSection() {
             <div className="hero-area-content">
               <div className="section-title mb-0">
                 <h1>
-                  MOD Arq Transforma espacios <br /> en obras de arte
+                  MOD Arq. Transforma espacios <br /> en obras de arte
                 </h1>
                 <div className="p-animation">
                   <p>

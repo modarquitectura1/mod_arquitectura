@@ -10,9 +10,7 @@ export default function FooterAreaSection() {
               <Link href="/" className="logo">
                 MOD Arq.
               </Link>
-              <p>
-                Diseña tu Casa Soñada <br /> maxime dolor voluptatibus natus
-              </p>
+              <p>Diseña tu Casa Soñada</p>
             </div>
             <div className="col-lg-2 col-md-6">
               <h5>Oficina</h5>
@@ -31,11 +29,10 @@ export default function FooterAreaSection() {
               <h5>Links</h5>
               <ul>
                 <li>
-                  <Link href="/about">Acerca de</Link>
-                  <Link href="/services">Servicios</Link>
-                  <Link href="/projects">Proyectos</Link>
-                  <Link href="/price">Precios</Link>
-                  <Link href="/faq">Preguntas Frecuentes</Link>
+                  <Link href="/nosotros">Acerca de</Link>
+                  <Link href="/servicios">Servicios</Link>
+                  <Link href="/proyectos">Proyectos</Link>
+                  <Link href="/contacto">Contacto</Link>
                 </li>
               </ul>
             </div>
@@ -44,17 +41,11 @@ export default function FooterAreaSection() {
               <ul>
                 <li>
                   <div className="social-area">
-                    <a href="#">
+                    <a href="https://www.facebook.com/MODARQ1/">
                       <i className="lab la-facebook-f"></i>Facebook
                     </a>
-                    <a href="#">
+                    <a href="https://www.instagram.com/mod_arquitectura/">
                       <i className="lab la-instagram"></i>Instagram
-                    </a>
-                    <a href="#">
-                      <i className="lab la-linkedin-in"></i>linkedin
-                    </a>
-                    <a href="#">
-                      <i className="la la-skype"></i>Skype
                     </a>
                   </div>
                 </li>

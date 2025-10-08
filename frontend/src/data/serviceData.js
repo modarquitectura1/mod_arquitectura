@@ -11,7 +11,7 @@ export const servicesAccordions = [
     title: "Acabados",
     image: serviceImg1,
     description:
-      "Ofrecemos servicios de carpintería personalizados, creando muebles y estructuras de madera a medida con acabados de alta calidad para transformar y embellecer sus espacios.",
+      "En MOD ARQUITECTURA ofrecemos acabados de alta calidad en Cali: pisos, pintura, iluminación, carpintería y detalles de lujo que transforman cada espacio",
     tabId: "services-item-1",
     number: "01",
   },
@@ -20,7 +20,7 @@ export const servicesAccordions = [
     title: "Construcción",
     image: serviceImg2,
     description:
-      "Renovamos y personalizamos muebles para darles nueva vida y adaptarlos perfectamente a su espacio renovado.",
+      "Nos especializamos en viviendas modernas, remodelaciones y proyectos personalizados con cumplimiento de normas, eficiencia y acabados impecables.",
     tabId: "services-item-6",
     number: "02",
   },

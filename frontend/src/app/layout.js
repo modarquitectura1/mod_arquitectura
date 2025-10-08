@@ -19,6 +19,7 @@ import Script from "next/script";
 import WowProvider from "@/components/WowProvider";
 import { AppWrapper } from "@/context";
 import BackToTop from "@/components/BackToTop";
+import WhatsappButton from "@/components/WhatsAppButton";
 
 export const metadata = {
   title: "MOD Arq | Architecture &amp; Interior Design Next Js Template",

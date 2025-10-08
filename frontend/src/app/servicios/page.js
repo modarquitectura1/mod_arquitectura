@@ -10,7 +10,7 @@ import { projectAcabados, projectConstruccion } from "@/data/projects";
 import CtaAreaSection from "@/components/PageSections/CtaAreaSection";
 import FeatureLineSection from "@/components/PageSections/FeatureLineSection";
 
-const menus = [{ label: "Services", to: "" }];
+const menus = [{ label: "Servicios", to: "" }];
 
 export default function Services() {
   return (

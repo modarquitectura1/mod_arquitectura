@@ -2,7 +2,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import ContactSection from "@/components/PageSections/ContactSection";
 import NewsletterSection from "@/components/PageSections/NewsletterSection";
 
-const menus = [{ label: "Contact", to: "" }];
+const menus = [{ label: "Contacto", to: "" }];
 
 export default function Contact() {
   return (

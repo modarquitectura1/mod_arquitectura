@@ -20,7 +20,7 @@ export default function CtaAreaSection() {
               Comencemos tu nuevo <br /> proyecto
             </h2>
           </div>
-          <Link href="/contact" className="theme-btn white-btn mt-30">
+          <Link href="/contacto" className="theme-btn white-btn mt-30">
             Contactanos
           </Link>
         </div>

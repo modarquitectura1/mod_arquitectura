@@ -11,7 +11,7 @@ export const homePageBannersData = [
     address: "Bogotá, Colombia",
     price: "2,895",
     theme_style: "Industrial",
-    architect: "Hugo Ríos",
+    architect: "Daniel",
     image: slideImage1,
   },
   {
@@ -21,7 +21,7 @@ export const homePageBannersData = [
     address: "Bogotá, Colombia",
     price: "1,895",
     theme_style: "Residencial",
-    architect: "Hugo Ríos",
+    architect: "Daniel",
     image: slideImage2,
   },
   {
@@ -31,7 +31,7 @@ export const homePageBannersData = [
     address: "Bogotá, Colombia",
     price: "2,215",
     theme_style: "Mediterráneo",
-    architect: "Hugo Ríos",
+    architect: "Daniel",
     image: slideImage3,
   },
   {
@@ -41,7 +41,7 @@ export const homePageBannersData = [
     address: "Bogotá, Colombia",
     price: "2,215",
     theme_style: "Mediterráneo",
-    architect: "Hugo Ríos",
+    architect: "Daniel",
     image: slideImage4,
   },
 ];

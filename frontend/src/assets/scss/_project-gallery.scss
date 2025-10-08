@@ -1,0 +1,222 @@
+// Project Gallery Section Styles
+// Responsive masonry-style layout for images
+
+// Gallery Section Container
+.gallery-section {
+  margin-top: 7.5rem;
+  padding: 0 1rem;
+
+  @media #{$sm} {
+    padding: 0 2rem;
+  }
+
+  @media #{$lg} {
+    padding: 0 3rem;
+  }
+
+  .gallery-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $primary_color;
+    font-family: $outfit;
+    margin-bottom: 1rem;
+
+    @media #{$sm} {
+      font-size: 2.25rem;
+    }
+
+    @media #{$lg} {
+      font-size: 2.5rem;
+    }
+  }
+
+  .gallery-divider {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, $primary_color 0%, transparent 100%);
+    margin-bottom: 2rem;
+    border: none;
+  }
+}
+
+// Gallery Grid Container
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1.25rem;
+}
+
+// Individual Gallery Item
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  aspect-ratio: 16/9;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+    .gallery-image {
+      transform: scale(1.05);
+    }
+
+    .gallery-overlay {
+      opacity: 1;
+    }
+  }
+
+  // For 1-column layout (mobile)
+  @media #{$xs} {
+    aspect-ratio: 16/9;
+  }
+}
+
+// Gallery Image Container
+.gallery-image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+// Gallery Image
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+// Gallery Overlay (for hover effects)
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(23, 23, 23, 0.7) 0%,
+    rgba(23, 23, 23, 0.3) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+}
+
+// Gallery Image Info (optional caption)
+.gallery-caption {
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 1rem;
+  font-family: $jost;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+
+  .gallery-item:hover & {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Loading state for images
+.gallery-item.loading {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+
+  .gallery-image {
+    opacity: 0;
+  }
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+// Responsive adjustments
+@media #{$xs} {
+  .gallery-section {
+    margin-top: 5rem;
+    padding: 0 0.5rem;
+
+    .gallery-title {
+      font-size: 1.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .gallery-divider {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .gallery-grid {
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .gallery-item {
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}
+
+// Masonry-style layout for better image distribution
+@media #{$lg} {
+  .gallery-grid {
+    // Enable masonry-like behavior with CSS Grid
+    grid-auto-rows: minmax(200px, auto);
+
+    .gallery-item {
+      // Allow items to span different heights
+      &:nth-child(3n + 1) {
+        grid-row: span 2;
+      }
+
+      &:nth-child(3n + 2) {
+        grid-row: span 1;
+      }
+
+      &:nth-child(3n + 3) {
+        grid-row: span 2;
+      }
+    }
+  }
+}
+
+// Focus styles for accessibility
+.gallery-item:focus {
+  outline: 2px solid $primary_color;
+  outline-offset: 2px;
+}
+
+// High contrast mode support
+@media (prefers-contrast: high) {
+  .gallery-item {
+    border: 2px solid $primary_color;
+  }
+
+  .gallery-overlay {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}

@@ -103,7 +103,7 @@ export const projectCategories = [
       {
         number: "03",
         title: "Parkview Resort",
-        image: new URL("@/assets/img/project/3-3.jpg", import.meta.url),
+        image: new URL("@/assets/img/project/3-6.jpg", import.meta.url),
       },
     ],
   },
@@ -124,7 +124,7 @@ export const projectCategories = [
       {
         number: "03",
         title: "Museum Spaces",
-        image: new URL("@/assets/img/project/3-6.jpg", import.meta.url),
+        image: new URL("@/assets/img/project/3-3.jpg", import.meta.url),
       },
     ],
   },
@@ -172,7 +172,7 @@ export const projectCategories = [
   },
   {
     id: "landscape-design",
-    label: "Const. Industrial",
+    label: "Const. Comercial",
     projects: [
       {
         number: "01",
@@ -238,7 +238,7 @@ export const projectConstruccion = [
   },
   {
     id: "landscape-design",
-    label: "Const. Industrial",
+    label: "Const. Comercial",
     projects: [
       {
         number: "01",
