@@ -54,7 +54,7 @@ export default function ServiceSection() {
                     <div className="services-text-container">
                       <h4 className="services-title">{service.title}</h4>
                       <p className="text-gray mb-0">{service.description}</p>
-                      <Link href="/services" className="theme-btn mt-30">
+                      <Link href="/servicios" className="theme-btn mt-30">
                         Ver más
                       </Link>
                     </div>
