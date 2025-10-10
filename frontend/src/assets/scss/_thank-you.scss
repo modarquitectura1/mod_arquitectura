@@ -1,0 +1,54 @@
+/*-- Thank You Page Styles
+-----------------------------------------*/
+
+.thank-you-page {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #004651;
+
+  .thank-you-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+
+    .thank-you-content {
+      margin: 0 auto 2.5rem auto;
+      margin-top: 8rem;
+      width: 100%;
+      max-width: 36rem;
+      text-align: center;
+
+      .success-message {
+        margin-bottom: 2rem;
+        color: #98ffc1; // green-900 equivalent
+      }
+
+      .main-title {
+        margin-bottom: 1rem;
+        font-size: 3.5rem; // text-4xl
+        font-weight: 800; // font-extrabold
+        font-family: $outfit;
+        color: $gray;
+        line-height: 1.2;
+
+        @media #{$xs} {
+          font-size: 1.875rem; // text-3xl on mobile
+        }
+      }
+
+      .subtitle {
+        font-family: $jost;
+        color: $body_text;
+        font-size: 1.125rem; // text-lg
+        line-height: 1.6;
+
+        @media #{$xs} {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

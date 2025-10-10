@@ -1,3 +1,5 @@
+import Form from "../Form";
+
 export default function ContactSection() {
   return (
     <div className="contact-section section-padding pt-0">
@@ -32,7 +34,8 @@ export default function ContactSection() {
               <div className="section-title">
                 <h2>Enviar Formulario </h2>
               </div>
-              <form action="#">
+              <Form />
+              {/* <form action="#">
                 <input type="text" placeholder="Nombre" />
                 <input type="email" placeholder="Email" />
                 <input type="tel" placeholder="Teléfono" />
@@ -43,7 +46,7 @@ export default function ContactSection() {
                   placeholder="Mensaje"
                 ></textarea>
                 <input type="submit" value="Enviar" />
-              </form>
+              </form> */}
 
               <div className="contact-text">
                 <p>
