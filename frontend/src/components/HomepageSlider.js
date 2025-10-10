@@ -37,7 +37,7 @@ export default function HomepageSlides() {
               style={{
                 backgroundImage: `url(${banner.image.src})`,
                 backgroundSize: "cover",
-                backgroundPosition: "center",
+                backgroundPosition: "bottom",
                 height: "500px",
               }}
             ></div>

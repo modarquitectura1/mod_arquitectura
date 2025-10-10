@@ -244,11 +244,11 @@
   .project-dtl-wrap {
     width: 70%;
     position: relative;
-    bottom: 0;
+    // bottom: -50px;
     right: 70%;
-    transform: translateY(-100px);
+    transform: translateY(0px);
     z-index: 2;
-    margin-bottom: -100px;
+    // margin-bottom: -100px;
 
     @media #{$md} {
       width: 100%;
@@ -257,8 +257,10 @@
     @media #{$xs} {
       width: 100%;
       right: 0;
-      transform: translateY(-50%);
-      margin-bottom: -225px;
+      position: static;
+      transform: none;
+      margin-bottom: 0;
+      margin-top: 0;
     }
   }
 }

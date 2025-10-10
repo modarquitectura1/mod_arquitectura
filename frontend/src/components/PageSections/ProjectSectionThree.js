@@ -73,7 +73,7 @@ export default function ProjectSectionThree({
                           <div className="fetured-work-bg"></div>
                           <div className="featured-work-info">
                             <h2>{project.number}</h2>
-                            <h4>{project.title}</h4>
+                            {/* <h4>{project.title}</h4> */}
                           </div>
                         </div>
                       </div>
