@@ -3,7 +3,7 @@
   .navigation {
     height: 120px;
     position: relative;
-    z-index: 9;
+    z-index: 99;
     display: flex;
     align-items: center;
     background: #fff;
@@ -250,7 +250,8 @@
       padding-left: 40px;
 
       &::before {
-        background-color: #fff;
+        // border-color: #fff;
+        border: 1px solid #fff;
       }
     }
 
@@ -281,7 +282,8 @@
   .sidebar-nav .metismenu a:active {
     text-decoration: none;
     color: #f8f9fa;
-    background: $body_text;
+    background: transparent;
+    border: 1px solid #fff;
   }
 }
 

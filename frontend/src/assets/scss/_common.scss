@@ -886,8 +886,11 @@ input.form-control {
   height: 6px;
   z-index: 10000001;
   background-color: #000;
-  transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
-    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition:
+    width 0.3s ease-in-out,
+    height 0.3s ease-in-out,
+    margin 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
 }
 .cursor-inner span {
   color: #fff;
@@ -1401,7 +1404,9 @@ input[type="search"]::-webkit-search-results-decoration {
   transition: -webkit-transform 0.2s linear;
   -o-transition: transform 0.2s linear;
   transition: transform 0.2s linear;
-  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  transition:
+    transform 0.2s linear,
+    -webkit-transform 0.2s linear;
 }
 
 .rotate-circle {
@@ -1415,7 +1420,7 @@ input[type="search"]::-webkit-search-results-decoration {
   animation-timing-function: linear;
 }
 .z-9999 {
-  z-index: 9999;
+  z-index: 50;
 }
 @-webkit-keyframes rotateCircle {
   0% {
