@@ -10,7 +10,7 @@ export function RenderPosts({ posts }) {
       {posts.map((post) => {
         return (
           <li key={post.id} className="project-item">
-            <Link href={`/projects/${post.slug}`} className="">
+            <Link href={`/proyectos/${post.slug}`} className="">
               <div className="project-card">
                 <div className="project-card-header">
                   <div className="project-image-container">
@@ -41,7 +41,7 @@ export function RenderPosts({ posts }) {
                 </div>
                 <div className="project-card-footer">
                   <button className="project-button">
-                    Learn More <MoveRight className="arrow-icon" />
+                    Ver mas <MoveRight className="arrow-icon" />
                   </button>
                 </div>
               </div>

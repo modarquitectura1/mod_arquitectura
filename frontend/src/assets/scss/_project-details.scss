@@ -70,6 +70,11 @@
 
   // Section title adjustments
   .section-title {
+    .section-subtitle {
+      color: $gray;
+      font-size: 1.5rem;
+    }
+
     @media #{$xs} {
       flex-direction: column !important;
       align-items: flex-start !important;
@@ -98,18 +103,20 @@
 
   // Single info items
   .single-info {
+    p {
+      color: $gray;
+    }
+
     @media #{$xs} {
       margin-bottom: 1rem;
 
       p {
         font-size: 0.9rem;
-        color: #666;
         margin-bottom: 0.25rem;
       }
 
       h4 {
         font-size: 1.1rem;
-        color: $primary_color;
         margin: 0;
       }
     }
@@ -165,5 +172,3 @@
     overflow-x: hidden;
   }
 }
-
-

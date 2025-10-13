@@ -40,7 +40,7 @@ export default function ProjectDetailsSection({ post }) {
             <div className="project-details-inner">
               <div className="section-title">
                 <h1>{post.nombre}</h1>
-                <h6 className="text-end">{post.categoria}</h6>
+                <h6 className="text-end section-subtitle">{post.categoria}</h6>
               </div>
               <div className="project-details-info">
                 {/* {projectInfo.map((info, index) => ( */}
