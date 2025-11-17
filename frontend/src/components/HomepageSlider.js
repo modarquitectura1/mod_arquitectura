@@ -57,8 +57,8 @@ export default function HomepageSlides() {
                         <h6>{banner.address}</h6>
                       </div>
                       <div className="single-project-info">
-                        <p>Precio Aprox.</p>
-                        <h6>${banner.price}</h6>
+                        <p>Arquitecto</p>
+                        <h6>{banner.architect}</h6>
                       </div>
                     </div>
                     <div className="col-xl-6 col-lg-6 col-md-6">
@@ -66,10 +66,10 @@ export default function HomepageSlides() {
                         <p>Categoria</p>
                         <h6>{banner.theme_style}</h6>
                       </div>
-                      <div className="single-project-info">
+                      {/* <div className="single-project-info">
                         <p>Arquitecto</p>
                         <h6>{banner.architect}</h6>
-                      </div>
+                      </div> */}
                     </div>
 
                     {/* ✅ Next & Prev Buttons */}

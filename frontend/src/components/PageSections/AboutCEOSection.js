@@ -27,10 +27,20 @@ export default function AboutCEOSection() {
               </div>
               <div className="p-animation">
                 <p>
-                  que sienten pasión por crear espacios hermosos y funcionales.
-                  Creemos que el buen diseño debe ser accesible para todos y
-                  trabajamos arduamente para hacer realidad la visión de
-                  nuestros clientes.
+                  CEO y Fundador de Mod Arquitectura <br /> Liderazgo Basado en
+                  la Experiencia y el Detalle <br /> Mi nombre es Daniel Andrés
+                  Segura Galvis, y soy el CEO y Fundador de Mod Arquitectura. Mi
+                  visión se cimenta en la experiencia práctica adquirida desde
+                  mi graduación como Arquitecto en 2011 por la Universidad de
+                  San Buenaventura.
+                </p>
+                <p>
+                  A lo largo de mi carrera profesional, tuve el privilegio de
+                  trabajar en la construcción y supervisión de acabados de
+                  importantes proyectos en Cali. Esta inmersión en el detalle
+                  fino de la obra me proporcionó una experiencia invaluable en
+                  el manejo de materiales de alta calidad y me permitió
+                  desarrollar una visión profunda del diseño contemporáneo
                 </p>
               </div>
               <Link href="/about" className="theme-btn mt-30">

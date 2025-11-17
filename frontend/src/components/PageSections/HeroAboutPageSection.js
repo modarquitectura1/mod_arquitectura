@@ -29,20 +29,21 @@ export default function HeroAboutPageSection() {
             {/* MOD Arq fue fundada en 1995 en California, EE.UU. La empresa fue
             establecida por Louis Skidmore y Nathaniel Owings, y posteriormente
             se unió John O. Merrill. */}
-            MOD ARQUITECTURA nació con la pasión de ofrecer soluciones
-            arquitectónicas integrales en Cali, Valle del Cauca. Con un enfoque
-            centrado en el cliente, combinamos creatividad y rigor técnico para
-            diseñar, construir y remodelar espacios residenciales únicos. Cada
-            proyecto refleja nuestra visión: funcionalidad, estética y
-            compromiso con la comunidad.
+            ​En Mod Arquitectura, creemos que la calidad excepcional, el diseño
+            personalizado y los acabados premium no deben ser exclusivos de unos
+            pocos. Somos una empresa dedicada a crear espacios que resuenan con
+            las necesidades de cada cliente, brindando la mejor opción
+            arquitectónica y de interiorismo, sin comprometer tu presupuesto ni
+            la excelencia.
           </p>
           <p>
-            Desde remodelaciones de apartamentos hasta viviendas totalmente
-            nuevas y proyectos de carpintería a medida, nuestra experiencia nos
-            ha permitido consolidarnos como una de las firmas de arquitectura
-            con mayor reconocimiento local. Nos basamos en valores de
-            transparencia, calidad y diseño emocional, siempre teniendo en
-            cuenta el contexto climático, cultural y urbano de Cali.
+            Nuestro enfoque se centra en la personalización completa, escuchando
+            tus ideas y ajustándonos a tus posibilidades financieras,
+            garantizando una satisfacción total. Convertimos los límites de un
+            presupuesto fijo en la oportunidad de diseñar soluciones innovadoras
+            y de alta calidad. ​Nuestra Promesa: Un diseño especial, acabados
+            garantizados y la tranquilidad de saber que tu proyecto está en
+            manos expertas y transparentes.
           </p>
         </div>
       </div>
