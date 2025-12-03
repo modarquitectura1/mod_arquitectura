@@ -39,7 +39,7 @@ export default function CounterSection({ customClass }) {
             <div className="single-counter-box">
               <p className="counter-number">
                 <CountUp
-                  end={1037}
+                  end={98}
                   duration={2.5}
                   startOnMount={false}
                   redraw={true}
@@ -55,7 +55,7 @@ export default function CounterSection({ customClass }) {
             <div className="single-counter-box">
               <p className="counter-number">
                 <CountUp
-                  end={156}
+                  end={50}
                   duration={2.5}
                   startOnMount={false}
                   redraw={true}
@@ -71,7 +71,7 @@ export default function CounterSection({ customClass }) {
             <div className="single-counter-box">
               <p className="counter-number">
                 <CountUp
-                  end={90}
+                  end={95}
                   duration={2.5}
                   suffix="%"
                   startOnMount={false}
@@ -88,7 +88,7 @@ export default function CounterSection({ customClass }) {
             <div className="single-counter-box">
               <p className="counter-number">
                 <CountUp
-                  end={30}
+                  end={15}
                   duration={2.5}
                   suffix="+"
                   startOnMount={false}

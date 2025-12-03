@@ -135,17 +135,17 @@ export const projectCategories = [
       {
         number: "01",
         title: "Mediterrean Villa",
-        image: new URL("@/assets/img/project/3-7.jpg", import.meta.url),
+        image: new URL("@/assets/img/project/3-7.jpeg", import.meta.url),
       },
       {
         number: "02",
         title: "Peninsula Villa",
-        image: new URL("@/assets/img/project/3-8.jpg", import.meta.url),
+        image: new URL("@/assets/img/project/3-8.jpeg", import.meta.url),
       },
       {
         number: "03",
         title: "Parkview Resort",
-        image: new URL("@/assets/img/project/3-9.jpg", import.meta.url),
+        image: new URL("@/assets/img/project/3-9.jpeg", import.meta.url),
       },
     ],
   },
