@@ -53,17 +53,17 @@ export const testimonialOneData = [
   {
     id: 1,
     content:
-      "Contraté a MOD Arq para diseñar y construir la casa de mis sueños, y no podría estar más feliz con el resultado. Desde la consulta inicial hasta la inspección final, el equipo de MOD Arq fue profesional.",
-    author: "Paul Scholes",
-    location: "Manchester, Reino Unido",
+      "Contraté a MOD Arq para diseñar y construir la casa de mis sueños, y no podría estar más feliz con el resultado. Desde la consulta inicial hasta la inspección final, el equipo fue muy profesional y respetó siempre los plazos.",
+    author: "Carlos Andrés Rodríguez",
+    location: "Cali",
     image: testimonialImg2,
   },
   {
     id: 2,
     content:
-      "Contraté a MOD Arq para diseñar y construir la casa de mis sueños, y no podría estar más feliz con el resultado. Desde la consulta inicial hasta la inspección final, el equipo de MOD Arq fue profesional.",
-    author: "Lisa Ray",
-    location: "Nueva York, EE.UU.",
+      "Necesitábamos ampliar la terraza y darle otro aire a la casa. MOD Arq entendió perfectamente lo que buscábamos, nos presentó varias opciones y el resultado superó nuestras expectativas. Los recomiendo sin dudar.",
+    author: "María Fernanda López",
+    location: "Jamundí",
     image: testimonialImg1,
   },
 ];
