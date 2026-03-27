@@ -36,7 +36,6 @@ export default function TestimonialOneSlider() {
                 <p>{testimonial.content}</p>
               </div>
               <div className="testimonial-author">
-                <Image src={testimonial.image} alt={testimonial.author} />
                 <h6 className="">
                   {testimonial.author} <span>{testimonial.location}</span>
                 </h6>
