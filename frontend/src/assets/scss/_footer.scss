@@ -1,3 +1,10 @@
+// The footer uses a negative z-index so the section above can overlap it.
+// Isolate this wrapper so that layer stays inside the page. Otherwise the
+// footer paints behind the wrapper and taps hit the wrapper instead of the links.
+#smooth-content {
+	isolation: isolate;
+}
+
 .footer-area {
 	background: #171717;
 	color: #fff;
