@@ -20,7 +20,10 @@ export default function ProjectDetailsSection({ post }) {
           {/* Project Image & Brief */}
           <div className="col-xl-6 col-lg-6 project-image-section">
             <div className="project-bg">
-              <img src={post.ImagenPrincipal.url} alt="Project Details" />
+              <img
+                src={post.ImagenPrincipal?.url}
+                alt={post.ImagenPrincipal?.alt || post.nombre}
+              />
               <div className="project-brief-wrap">
                 {/* {projectBrief.map((item, index) => ( */}
                 <div
@@ -50,7 +53,7 @@ export default function ProjectDetailsSection({ post }) {
                 </div>
                 <div className="single-info">
                   <p>Fecha</p>
-                  <h4>{post.fecha}</h4>
+                  <h4>{post.fecha?.slice(0, 10)}</h4>
                 </div>
                 {/* ))} */}
               </div>
@@ -72,7 +75,7 @@ export default function ProjectDetailsSection({ post }) {
                   <div className="gallery-image-container">
                     <img
                       src={image.url}
-                      alt={`Imagen del proyecto ${index + 1}`}
+                      alt={image.alt || `Imagen del proyecto ${index + 1}`}
                       className="gallery-image"
                       loading="lazy"
                     />

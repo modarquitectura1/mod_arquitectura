@@ -1,7 +1,10 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import CountUp from "react-countup";
+import CountUpModule from "react-countup";
+
+// "type": "module" makes webpack return the whole CommonJS exports object here.
+const CountUp = CountUpModule.default ?? CountUpModule;
 
 export default function CounterSection({ customClass }) {
   const [startCount, setStartCount] = useState(false);

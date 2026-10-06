@@ -1,9 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import Slider from "react-slick";
+import SliderModule from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+// "type": "module" makes webpack return the whole CommonJS exports object here.
+const Slider = SliderModule.default ?? SliderModule;
 import { clients } from "@/data/client";
 
 export default function ClientSection({ customClass }) {

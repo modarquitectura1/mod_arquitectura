@@ -15,10 +15,8 @@ export function RenderPosts({ posts }) {
                 <div className="project-card-header">
                   <div className="project-image-container">
                     <Image
-                      alt={
-                        post.ImagenPrincipal.alternativeText || "Cover image"
-                      }
-                      src={post.ImagenPrincipal.url}
+                      alt={post.ImagenPrincipal?.alt || post.nombre}
+                      src={post.ImagenPrincipal?.url}
                       sizes="(max-width: 640px) 60vw, 35vw"
                       fill
                       className="project-image"

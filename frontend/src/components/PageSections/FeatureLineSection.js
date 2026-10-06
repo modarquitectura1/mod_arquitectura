@@ -1,9 +1,12 @@
 "use client";
 
-import Slider from "react-slick";
+import SliderModule from "react-slick";
 import featureBg2 from "@/assets/img/feature-bg-2.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+// "type": "module" makes webpack return the whole CommonJS exports object here.
+const Slider = SliderModule.default ?? SliderModule;
 
 export default function FeatureLineSection() {
   const settings = {

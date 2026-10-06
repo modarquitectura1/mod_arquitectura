@@ -1,11 +1,15 @@
+import { withPayload } from "@payloadcms/next/withPayload";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: [
-      "res.cloudinary.com",
-      "acceptable-diamond-4933db05ab.media.strapiapp.com",
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+      },
     ],
   },
 };
 
-export default nextConfig;
+export default withPayload(nextConfig);

@@ -1,7 +1,10 @@
 "use client";
 
-import Slider from "react-slick";
+import SliderModule from "react-slick";
 import "slick-carousel/slick/slick.css";
+
+// "type": "module" makes webpack return the whole CommonJS exports object here.
+const Slider = SliderModule.default ?? SliderModule;
 
 import "slick-carousel/slick/slick-theme.css";
 import asteriskDark from "@/assets/img/asterisk-dark.png";
