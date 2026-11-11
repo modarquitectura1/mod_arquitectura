@@ -48,16 +48,11 @@ Version: 1.0
 
 */
 
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
 body {
   height: 100vh;
   margin: 0;
   background: #004651;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
