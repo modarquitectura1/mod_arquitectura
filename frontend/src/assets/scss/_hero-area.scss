@@ -413,7 +413,9 @@ HomepageSlider.js to restore that version.
   flex-direction: column;
   justify-content: space-between;
   gap: 2.5rem;
-  min-height: calc(100svh - 120px);
+  width: 100%;
+  max-width: 100%;
+  min-height: calc(100svh - 140px);
   padding: 4.25rem 0 2rem;
   overflow: hidden;
   background: #102428;
@@ -421,7 +423,7 @@ HomepageSlider.js to restore that version.
 
   @media #{$xs} {
     gap: 1.75rem;
-    min-height: calc(100svh - 96px);
+    min-height: calc(100svh - 108px);
     padding: 2.25rem 0 1.25rem;
   }
 }

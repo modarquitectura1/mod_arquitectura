@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "frontend/src/assets/scss/_hero-area.scss"
+        ],
+        "createdAt": "2026-11-11T20:28:03.441Z",
+        "reason": "Pre-existing gold rule on the project plate; this change only stopped horizontal overflow and was not a redesign."
+      }
+    ]
+  }
+}

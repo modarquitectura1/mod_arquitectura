@@ -48,10 +48,15 @@ Version: 1.0
 
 */
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   height: 100vh;
   margin: 0;
-  // background: linear-gradient(to bottom, #fffefa 0%, #fffefa 70%, #d3f9ff 100%);
   background: #004651;
   background-attachment: fixed;
   background-repeat: no-repeat;

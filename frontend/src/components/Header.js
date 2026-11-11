@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { menuItems } from "@/data/menu";
-import MobileMenuNavBar from "@/components/MobileMenuNavBar";
+import MobileMenuNavBar, { MobileNavPanel } from "@/components/MobileMenuNavBar";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import logo from "@/assets/img/logo_mod.jpg";
@@ -30,14 +30,21 @@ export default function Header() {
   }, []);
 
   return (
+    <>
     <div className="header-area">
-      <div className={isSticky ? "header-sticky" : ""} id="header-sticky">
+      <div className={isSticky ? "header-sticky" : "header-bar"} id="header-sticky">
         <div className="navigation">
           <div className="container">
             <div className="header-inner-box">
               {/* Logo */}
               <Link href="/" className="logo">
-                <Image src={logo} alt="logo" width={200} />
+                <Image
+                  src={logo}
+                  alt="MOD Arquitectura"
+                  width={1080}
+                  height={1080}
+                  priority
+                />
               </Link>
 
               {/* Desktop Menu */}
@@ -92,12 +99,13 @@ export default function Header() {
                 </div>
               </div>
 
-              {/* Mobile Menu */}
-              <MobileMenuNavBar menuItems={menuItems} />
+              <MobileMenuNavBar />
             </div>
           </div>
         </div>
       </div>
     </div>
+    <MobileNavPanel menuItems={menuItems} />
+    </>
   );
 }
