@@ -46,7 +46,6 @@ export default function Home() {
       <ProcessSection customClass={"pt-0 pb-40"} />
 
       {/*Service Section*/}
-      <ServiceSection />
 
       {/*Testimonial Section*/}
       <TestimonialSection customClass={"pt-0"} />
@@ -57,6 +56,7 @@ export default function Home() {
       {/* <CtaAreaSection /> */}
 
       <ContactSection />
+      <ServiceSection />
     </>
   );
 }

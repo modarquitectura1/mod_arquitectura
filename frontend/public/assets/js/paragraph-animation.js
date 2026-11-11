@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 // Paragraph Animation
 let pAnimationLines = gsap.utils.toArray(".p-animation p");

@@ -12,10 +12,15 @@
 -----------------------------------------*/
 html,
 body {
-  height: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
+}
+
+// overflow-x lives on <html> (not a 100%-tall element) so the fixed off-canvas
+// drawers are clipped at the viewport while native vertical scroll still works.
+html {
+  overflow-x: hidden;
 }
 
 body {

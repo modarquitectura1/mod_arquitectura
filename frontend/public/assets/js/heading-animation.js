@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 // Title Animation
 let headingAnimationLines = gsap.utils.toArray(".heading-animation");
