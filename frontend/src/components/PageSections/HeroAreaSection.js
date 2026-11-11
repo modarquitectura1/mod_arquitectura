@@ -1,3 +1,17 @@
+import HomepageSlides from "@/components/HomepageSlider";
+
+export default function HeroAreaSection() {
+  return (
+    <div id="home-2" className="hero-area">
+      <HomepageSlides />
+    </div>
+  );
+}
+
+/*
+ROLLBACK — headline block above a separate slider.
+Restore this return and the framed slider component to split them again.
+
 import Image from "next/image";
 import headlineImg from "@/assets/img/headline-img.jpg";
 import HomepageSlides from "@/components/HomepageSlider";
@@ -33,3 +47,4 @@ export default function HeroAreaSection() {
     </div>
   );
 }
+*/

@@ -16,9 +16,7 @@ export default function AboutSectionTwo() {
             <div className="about-content-wrapper">
               <div className="section-title">
                 <div className="heading-animation">
-                  <h2>
-                    Sobre <span>/</span> <br /> MOD Arquitectura
-                  </h2>
+                  <h2>Sobre MOD Arquitectura</h2>
                 </div>
               </div>
               <div className="heading-animation">
@@ -35,7 +33,7 @@ export default function AboutSectionTwo() {
                   nuestros clientes.
                 </p>
               </div>
-              <Link href="/about" className="theme-btn mt-30">
+              <Link href="/nosotros" className="theme-btn mt-30">
                 Más información
               </Link>
             </div>

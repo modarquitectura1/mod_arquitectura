@@ -1,47 +1,84 @@
 import { getListOfPosts } from "@/lib/queries";
-import { Calendar, MoveRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { PaginationComponent } from "./PaginationComponent";
 import Image from "next/image";
 import Link from "next/link";
 
-export function RenderPosts({ posts }) {
+function projectYear(fecha) {
+  if (!fecha) return null;
+  const date = new Date(fecha);
+  if (Number.isNaN(date.getTime())) return null;
+  return String(date.getFullYear());
+}
+
+function ProjectFacts({ post, year }) {
+  const facts = [
+    post.Ubicacion ? { label: "Lugar", value: post.Ubicacion } : null,
+    post.areaTotal ? { label: "Área", value: post.areaTotal } : null,
+    year ? { label: "Año", value: year } : null,
+  ].filter(Boolean);
+
+  if (facts.length === 0) return null;
+
+  return (
+    <dl className="project-facts">
+      {facts.map((fact) => (
+        <div key={fact.label}>
+          <dt>{fact.label}</dt>
+          <dd>{fact.value}</dd>
+        </div>
+      ))}
+    </dl>
+  );
+}
+
+export function RenderPosts({ posts, startIndex = 0, page = 1 }) {
   return (
     <ul className="projects-grid">
-      {posts.map((post) => {
+      {posts.map((post, index) => {
+        const number = String(startIndex + index + 1).padStart(2, "0");
+        const featured = page === 1 && index === 0;
+        const year = projectYear(post.fecha);
+        const imageUrl = post.ImagenPrincipal?.url;
+        const imageAlt = post.ImagenPrincipal?.alt || post.nombre;
+
         return (
-          <li key={post.id} className="project-item">
-            <Link href={`/proyectos/${post.slug}`} className="">
-              <div className="project-card">
-                <div className="project-card-header">
-                  <div className="project-image-container">
-                    <Image
-                      alt={post.ImagenPrincipal?.alt || post.nombre}
-                      src={post.ImagenPrincipal?.url}
-                      sizes="(max-width: 640px) 60vw, 35vw"
-                      fill
-                      className="project-image"
-                    />
-                  </div>
-                </div>
-                <div className="project-card-content">
-                  <p className="project-date">
-                    <Calendar className="calendar-icon" />
-                    {new Date(post.fecha).toLocaleDateString("en-us", {
-                      weekday: "long",
-                      year: "numeric",
-                      month: "short",
-                      day: "numeric",
-                    })}
-                  </p>
-                  {/* TODO: cambiar titulo */}
-                  <h2 className="project-title">{post.nombre}</h2>
+          <li
+            key={post.id}
+            className={featured ? "project-item is-featured" : "project-item"}
+          >
+            <Link href={`/proyectos/${post.slug}`} className="project-link">
+              <div className="project-media">
+                {imageUrl ? (
+                  <Image
+                    alt={imageAlt}
+                    src={imageUrl}
+                    sizes={
+                      featured
+                        ? "(max-width: 991px) 100vw, 62vw"
+                        : "(max-width: 767px) 100vw, 46vw"
+                    }
+                    fill
+                    className="project-image"
+                    priority={featured}
+                  />
+                ) : null}
+                <span className="project-index">{number}</span>
+              </div>
+
+              <div className="project-copy">
+                {post.categoria ? (
+                  <p className="project-kicker">{post.categoria}</p>
+                ) : null}
+                <h2 className="project-title">{post.nombre}</h2>
+                {post.descripcionCorta ? (
                   <p className="project-description">{post.descripcionCorta}</p>
-                </div>
-                <div className="project-card-footer">
-                  <button className="project-button">
-                    Ver mas <MoveRight className="arrow-icon" />
-                  </button>
-                </div>
+                ) : null}
+                <ProjectFacts post={post} year={year} />
+                <span className="project-cta">
+                  Ver proyecto
+                  <ArrowRight aria-hidden="true" />
+                </span>
               </div>
             </Link>
           </li>
@@ -51,22 +88,39 @@ export function RenderPosts({ posts }) {
   );
 }
 
+export function ProjectsListFallback() {
+  return (
+    <div className="projects-grid" role="status" aria-live="polite">
+      <span className="visually-hidden">Cargando proyectos</span>
+      {Array.from({ length: 3 }).map((_, index) => (
+        <div
+          key={index}
+          className={index === 0 ? "project-skeleton is-featured" : "project-skeleton"}
+          aria-hidden="true"
+        />
+      ))}
+    </div>
+  );
+}
+
 export default async function FirstRenderBlogs({ searchParams }) {
   const currentPage = Number(searchParams?.page) || 1;
   const data = await getListOfPosts(currentPage);
-  const posts = data?.data;
-  const pageCount = data?.meta.pagination.pageCount;
+  const posts = Array.isArray(data?.data) ? data.data : [];
+  const pageCount = data?.meta?.pagination?.pageCount ?? 0;
+  const pageSize = data?.meta?.pagination?.pageSize || 6;
+  const startIndex = (currentPage - 1) * pageSize;
 
   return (
     <>
       {posts.length > 0 ? (
         <>
-          <RenderPosts posts={posts} />
+          <RenderPosts posts={posts} startIndex={startIndex} page={currentPage} />
           <PaginationComponent pageCount={pageCount} />
         </>
       ) : (
         <p className="projects-empty">
-          No hay publicaciones por el momento, ¡vuelve pronto!
+          No hay proyectos publicados por el momento. Vuelve pronto.
         </p>
       )}
     </>
@@ -74,15 +128,14 @@ export default async function FirstRenderBlogs({ searchParams }) {
 }
 
 export async function LastThreePosts() {
-  const currentPage = 1;
-  const data = await getListOfPosts(currentPage);
-  const posts = data?.data;
+  const data = await getListOfPosts(1);
+  const posts = Array.isArray(data?.data) ? data.data : [];
 
   return posts.length > 0 ? (
-    <RenderPosts posts={posts.slice(0, 3)} />
+    <RenderPosts posts={posts.slice(0, 3)} page={1} />
   ) : (
     <p className="projects-empty">
-      No hay publicaciones por el momento, ¡vuelve pronto!
+      No hay proyectos publicados por el momento. Vuelve pronto.
     </p>
   );
 }

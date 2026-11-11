@@ -132,16 +132,13 @@
   }
 }
 
-// Hover effects
-.pagination-item:hover .pagination-button:not(:disabled) {
-  transform: translateY(-1px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.pagination-arrow svg {
+  width: 1.05rem;
+  height: 1.05rem;
 }
 
-// Active state
-.pagination-item:active .pagination-button:not(:disabled) {
-  transform: translateY(0);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+.projects-catalog .pagination {
+  margin-top: 3rem;
 }
 
 // Focus styles for accessibility

@@ -1,12 +1,9 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import HeroSectionProjects from "@/components/PageSections/HeroSectionProjects";
-import ServiceSectionSix from "@/components/PageSections/ServiceSectionSix";
 import ProjectSectionThree from "@/components/PageSections/ProjectSectionThree";
-import ClientSection from "@/components/PageSections/ClientSection";
-import NewsletterSection from "@/components/PageSections/NewsletterSection";
 import CtaAreaSection from "@/components/PageSections/CtaAreaSection";
 import { Suspense } from "react";
-import FirstRenderBlogs from "@/components/ProjectsList";
+import FirstRenderBlogs, { ProjectsListFallback } from "@/components/ProjectsList";
 
 const menus = [{ label: "Proyectos", to: "" }];
 
@@ -22,17 +19,23 @@ export default async function Projects(props) {
       <HeroSectionProjects />
 
       {/*Projects List*/}
-      <Suspense>
-        <div className="mt-30 relative pt-16 px-4 sm:px-6 lg:px-8 z-20">
-          <div className="max-w-[26rem] sm:max-w-[52.5rem] lg:max-w-7xl mx-auto text-center">
-            <h2 className="font-bold text-3xl md:text-[44px] md:leading-[50px] text-green-900 mb-4">
-              Proyectos
-            </h2>
-            <p className="text-gray-500 mb-8">Descubre nuestros proyectos</p>
-          </div>
-          <FirstRenderBlogs searchParams={searchParams} />
+      <section
+        id="projects-catalog"
+        className="projects-catalog"
+        aria-labelledby="projects-catalog-title"
+      >
+        <div className="container">
+          <header className="projects-catalog-header">
+            <h2 id="projects-catalog-title">Obra reciente</h2>
+            <p>
+              Lugares, escalas y el carácter de cada espacio que hemos construido.
+            </p>
+          </header>
+          <Suspense fallback={<ProjectsListFallback />}>
+            <FirstRenderBlogs searchParams={searchParams} />
+          </Suspense>
         </div>
-      </Suspense>
+      </section>
 
       {/*Project Section*/}
       <ProjectSectionThree />

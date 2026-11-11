@@ -1,68 +1,61 @@
-// Project Images
-import projectDetailsImage from "@/assets/img/project/project-details.jpg";
-import challengeImg1 from "@/assets/img/project/challenge-img.jpg";
-import challengeImg2 from "@/assets/img/project/challenge-img-2.jpg";
-import solutionsImg from "@/assets/img/project/solutions-img.jpg";
-import {
-  challenges,
-  galleryImages,
-  projectBrief,
-  projectInfo,
-  solutions,
-} from "@/data/projects";
-
 export default function ProjectDetailsSection({ post }) {
+  const fecha = post.fecha?.slice(0, 10);
+
   return (
     <div className="project-details-wrap section-padding pt-0">
       <div className="container">
-        {/* Project Overview */}
-        <div className="row gx-5 justify-content-around align-items-start mt-30 project-overview-row">
-          {/* Project Image & Brief */}
-          <div className="col-xl-6 col-lg-6 project-image-section">
-            <div className="project-bg">
-              <img
-                src={post.ImagenPrincipal?.url}
-                alt={post.ImagenPrincipal?.alt || post.nombre}
-              />
-              <div className="project-brief-wrap">
-                {/* {projectBrief.map((item, index) => ( */}
-                <div
-                  // key={index}
-                  className={`single-brief `}
-                >
-                  <h6>Area Total</h6>
-                  <p>{post.areaTotal}</p>
-                </div>
-                {/* ))} */}
+        {/* Horizontal Project Hero */}
+        <article className="project-hero">
+          <div className="project-hero-media">
+            <img
+              src={post.ImagenPrincipal?.url}
+              alt={post.ImagenPrincipal?.alt || post.nombre}
+            />
+            <div className="project-hero-media-veil" aria-hidden="true" />
+            {post.areaTotal && (
+              <div className="project-hero-badge">
+                <span className="project-hero-badge-label">Área Total</span>
+                <span className="project-hero-badge-value">{post.areaTotal}</span>
               </div>
-            </div>
+            )}
           </div>
 
-          {/* Project Details */}
-          <div className="col-xl-6 col-lg-6 project-details-section">
-            <div className="project-details-inner">
-              <div className="section-title">
-                <h1>{post.nombre}</h1>
-                <h6 className="text-end section-subtitle">{post.categoria}</h6>
-              </div>
-              <div className="project-details-info">
-                {/* {projectInfo.map((info, index) => ( */}
-                <div className="single-info">
-                  <p>Ubicacion</p>
-                  <h4>{post.Ubicacion}</h4>
+          <div className="project-hero-body">
+            <header className="project-hero-header">
+              {post.categoria && (
+                <span className="project-hero-category">{post.categoria}</span>
+              )}
+              <h1 className="project-hero-title">{post.nombre}</h1>
+            </header>
+
+            <div className="project-hero-meta">
+              {post.Ubicacion && (
+                <div className="project-hero-meta-item">
+                  <span className="meta-label">Ubicación</span>
+                  <span className="meta-value">{post.Ubicacion}</span>
                 </div>
-                <div className="single-info">
-                  <p>Fecha</p>
-                  <h4>{post.fecha?.slice(0, 10)}</h4>
+              )}
+              {fecha && (
+                <div className="project-hero-meta-item">
+                  <span className="meta-label">Fecha</span>
+                  <span className="meta-value">{fecha}</span>
                 </div>
-                {/* ))} */}
-              </div>
-              <div className="project-desc">
+              )}
+              {post.areaTotal && (
+                <div className="project-hero-meta-item project-hero-meta-item--desktop-only">
+                  <span className="meta-label">Área Total</span>
+                  <span className="meta-value">{post.areaTotal}</span>
+                </div>
+              )}
+            </div>
+
+            {post.descripcionCorta && (
+              <div className="project-hero-desc">
                 <p>{post.descripcionCorta}</p>
               </div>
-            </div>
+            )}
           </div>
-        </div>
+        </article>
 
         {/* Gallery Section */}
         {post.imagenes && post.imagenes.length > 0 && (

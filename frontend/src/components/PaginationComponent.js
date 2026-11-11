@@ -1,5 +1,6 @@
 "use client";
 import { usePathname, useSearchParams, useRouter } from "next/navigation";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 // Utility function to combine class names (similar to cn from shadcn)
 const cn = (...classes) => {
@@ -21,7 +22,7 @@ const PaginationArrow = ({ direction, href, isDisabled }) => {
   return (
     <button
       onClick={handleClick}
-      aria-label={isLeft ? "Go to previous page" : "Go to next page"}
+      aria-label={isLeft ? "Página anterior" : "Página siguiente"}
       aria-disabled={isDisabled}
       disabled={isDisabled}
       className={cn(
@@ -29,7 +30,11 @@ const PaginationArrow = ({ direction, href, isDisabled }) => {
         isDisabled ? "pagination-button-ghost" : "pagination-button-outline"
       )}
     >
-      {isLeft ? "«" : "»"}
+      {isLeft ? (
+        <ChevronLeft aria-hidden="true" />
+      ) : (
+        <ChevronRight aria-hidden="true" />
+      )}
     </button>
   );
 };
@@ -62,7 +67,9 @@ export function PaginationComponent({ pageCount, className }) {
           />
         </li>
         <li className="pagination-item">
-          <span className="pagination-page-info">Page {currentPage}</span>
+          <span className="pagination-page-info">
+            Página {currentPage} de {pageCount}
+          </span>
         </li>
         <li className="pagination-item">
           <PaginationArrow

@@ -43,7 +43,7 @@ export default function AboutCEOSection() {
                   desarrollar una visión profunda del diseño contemporáneo
                 </p>
               </div>
-              <Link href="/about" className="theme-btn mt-30">
+              <Link href="/nosotros" className="theme-btn mt-30">
                 Más información
               </Link>
             </div>

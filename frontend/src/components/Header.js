@@ -3,10 +3,12 @@
 import Link from "next/link";
 import { menuItems } from "@/data/menu";
 import MobileMenuNavBar from "@/components/MobileMenuNavBar";
-import HeaderSearch from "@/components/HeaderSearch";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import logo from "@/assets/img/logo_mod.jpg";
+import igIcon from "@/assets/img/ig-icon.png";
+
+const INSTAGRAM_URL = "https://www.instagram.com/mod_arquitectura/";
 
 export default function Header() {
   const [isSticky, setIsSticky] = useState(false);
@@ -35,7 +37,6 @@ export default function Header() {
             <div className="header-inner-box">
               {/* Logo */}
               <Link href="/" className="logo">
-                {/* MOD Arq. */}
                 <Image src={logo} alt="logo" width={200} />
               </Link>
 
@@ -65,9 +66,23 @@ export default function Header() {
                 </ul>
               </div>
 
-              {/* Header Right (Search, Menu Trigger) */}
+              {/* Header Right: Instagram + Menu Trigger */}
               <div className="header-right">
-                {/* <HeaderSearch /> */}
+                <a
+                  href={INSTAGRAM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="header-ig-link d-none d-lg-inline-flex"
+                  aria-label="Instagram de MOD Arquitectura"
+                >
+                  <Image
+                    src={igIcon}
+                    alt="Instagram"
+                    width={32}
+                    height={32}
+                    unoptimized
+                  />
+                </a>
                 <div className="header-btn">
                   <div className="menu-trigger">
                     <span className="lines" />

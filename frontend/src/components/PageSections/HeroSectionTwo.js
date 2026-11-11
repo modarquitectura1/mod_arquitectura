@@ -37,7 +37,7 @@ export default function HeroSectionTwo() {
                     us help you transform your space into a work of art.
                   </p>
                 </div>
-                <Link href="/about" className="theme-btn mt-20">
+                <Link href="/nosotros" className="theme-btn mt-20">
                   Start a Project
                 </Link>
               </div>

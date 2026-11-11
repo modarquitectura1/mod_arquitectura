@@ -17,7 +17,7 @@ export default function AboutAreaSection() {
             </div>
           </div>
           <div className="col-xl-3 col-lg-4 text-xl-center">
-            <Link href="/about">
+            <Link href="/nosotros">
               <div className="circle-button in-bord">
                 <div className="rotate-circle fz-30 text-u">
                   {/*<svg className="textcircle" viewBox="0 0 500 500">

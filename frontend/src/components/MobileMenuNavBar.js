@@ -4,6 +4,10 @@ import Link from "next/link";
 import { useEffect, useRef } from "react";
 import MetisMenu from "metismenujs";
 import "metismenujs/sass";
+import Image from "next/image";
+import igIcon from "@/assets/img/ig-icon.png";
+
+const INSTAGRAM_URL = "https://www.instagram.com/mod_arquitectura/";
 
 export default function MobileMenuNavBar({ menuItems }) {
   const menuRef = useRef(null);
@@ -13,10 +17,27 @@ export default function MobileMenuNavBar({ menuItems }) {
   }, []);
 
   return (
-    <div className="mobile-nav-bar d-block col-sm-1 col-2 d-lg-none">
+    <div className="mobile-nav-bar d-block d-lg-none">
       <div className="mobile-nav-wrap">
-        <div id="hamburger">
-          <i className="las la-bars" />
+        <div className="mobile-nav-actions">
+          <a
+            href={INSTAGRAM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="header-ig-link"
+            aria-label="Instagram de MOD Arquitectura"
+          >
+            <Image
+              src={igIcon}
+              alt="Instagram"
+              width={32}
+              height={32}
+              unoptimized
+            />
+          </a>
+          <div id="hamburger">
+            <i className="las la-bars" />
+          </div>
         </div>
 
         {/* Mobile Responsive Menu */}

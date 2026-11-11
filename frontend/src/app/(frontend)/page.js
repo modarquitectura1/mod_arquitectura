@@ -33,9 +33,6 @@ export default function Home() {
       {/*Counter Section*/}
       <CounterSection customClass={"pt-50 pb-50"} />
 
-      {/*Service Section*/}
-      <ServiceSection />
-
       {/*Project Section Slider*/}
       {/* <FeatureWorkSectionSlider /> */}
 
@@ -47,6 +44,9 @@ export default function Home() {
 
       {/*Project Section*/}
       <ProcessSection customClass={"pt-0 pb-40"} />
+
+      {/*Service Section*/}
+      <ServiceSection />
 
       {/*Testimonial Section*/}
       <TestimonialSection customClass={"pt-0"} />

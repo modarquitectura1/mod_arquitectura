@@ -85,222 +85,70 @@ export const projects = [
   },
 ];
 
-export const projectCategories = [
+import serviceInstitucionalImg from "@/assets/img/project/3-8.jpeg";
+import serviceResidencialImg from "@/assets/img/project/3-5.jpg";
+import serviceComercialImg from "@/assets/img/project/3-13.jpg";
+import serviceCarpinteriaImg from "@/assets/img/project/3-1.jpg";
+import serviceRemodelacionImg from "@/assets/img/project/3-4.jpg";
+
+/** Tres tipos de servicio para home / sección principal */
+export const serviceTypes = [
   {
-    id: "architecture-design",
-    label: "Carpintería",
-    projects: [
-      {
-        number: "01",
-        title: "Mediterrean Villa",
-        image: new URL("@/assets/img/project/3-1.jpg", import.meta.url),
-      },
-      {
-        number: "02",
-        title: "Peninsula Villa",
-        image: new URL("@/assets/img/project/3-2.jpg", import.meta.url),
-      },
-      {
-        number: "03",
-        title: "Parkview Resort",
-        image: new URL("@/assets/img/project/3-6.jpg", import.meta.url),
-      },
-    ],
+    id: "institucional",
+    label: "Institucional",
+    image: serviceInstitucionalImg,
+    href: "/proyectos",
   },
   {
-    id: "interior-design",
-    label: "Remodelación",
-    projects: [
-      {
-        number: "01",
-        title: "Restaurant Inn",
-        image: new URL("@/assets/img/project/3-4.jpg", import.meta.url),
-      },
-      {
-        number: "02",
-        title: "Corporate Office",
-        image: new URL("@/assets/img/project/3-5.jpg", import.meta.url),
-      },
-      {
-        number: "03",
-        title: "Museum Spaces",
-        image: new URL("@/assets/img/project/3-3.jpg", import.meta.url),
-      },
-    ],
+    id: "residencial",
+    label: "Residencial",
+    image: serviceResidencialImg,
+    href: "/proyectos",
   },
   {
-    id: "project-management",
-    label: "Const. Institucional",
-    projects: [
-      {
-        number: "01",
-        title: "Mediterrean Villa",
-        image: new URL("@/assets/img/project/3-7.jpeg", import.meta.url),
-      },
-      {
-        number: "02",
-        title: "Peninsula Villa",
-        image: new URL("@/assets/img/project/3-8.jpeg", import.meta.url),
-      },
-      {
-        number: "03",
-        title: "Parkview Resort",
-        image: new URL("@/assets/img/project/3-9.jpeg", import.meta.url),
-      },
-    ],
-  },
-  {
-    id: "historic-preservation",
-    label: "Const. Residencial",
-    projects: [
-      {
-        number: "01",
-        title: "Sears Tower",
-        image: new URL("@/assets/img/project/3-10.jpg", import.meta.url),
-      },
-      {
-        number: "02",
-        title: "Willis Mall",
-        image: new URL("@/assets/img/project/3-11.jpg", import.meta.url),
-      },
-      {
-        number: "03",
-        title: "Pixel IT Park",
-        image: new URL("@/assets/img/project/3-12.jpg", import.meta.url),
-      },
-    ],
-  },
-  {
-    id: "landscape-design",
-    label: "Const. Comercial",
-    projects: [
-      {
-        number: "01",
-        title: "Dining Spaces",
-        image: new URL("@/assets/img/project/3-13.jpg", import.meta.url),
-      },
-      {
-        number: "02",
-        title: "Common Area",
-        image: new URL("@/assets/img/project/3-14.jpg", import.meta.url),
-      },
-      {
-        number: "03",
-        title: "House Yard Design",
-        image: new URL("@/assets/img/project/3-15.jpg", import.meta.url),
-      },
-    ],
+    id: "comercial",
+    label: "Comercial",
+    image: serviceComercialImg,
+    href: "/proyectos",
   },
 ];
 
+/** Alias histórico — mismos tres tipos */
+export const projectCategories = serviceTypes;
+
 export const projectConstruccion = [
   {
-    id: "project-management",
-    label: "Const. Institucional",
-    projects: [
-      {
-        number: "01",
-        title: "Mediterrean Villa",
-        image: "/assets/img/project/3-7.jpg",
-      },
-      {
-        number: "02",
-        title: "Peninsula Villa",
-        image: "/assets/img/project/3-8.jpg",
-      },
-      {
-        number: "03",
-        title: "Parkview Resort",
-        image: "/assets/img/project/3-9.jpg",
-      },
-    ],
+    id: "institucional",
+    label: "Institucional",
+    image: serviceInstitucionalImg,
+    href: "/proyectos",
   },
   {
-    id: "historic-preservation",
-    label: "Const. Residencial",
-    projects: [
-      {
-        number: "01",
-        title: "Sears Tower",
-        image: "/assets/img/project/3-10.jpg",
-      },
-      {
-        number: "02",
-        title: "Willis Mall",
-        image: "/assets/img/project/3-11.jpg",
-      },
-      {
-        number: "03",
-        title: "Pixel IT Park",
-        image: "/assets/img/project/3-12.jpg",
-      },
-    ],
+    id: "residencial",
+    label: "Residencial",
+    image: serviceResidencialImg,
+    href: "/proyectos",
   },
   {
-    id: "landscape-design",
-    label: "Const. Comercial",
-    projects: [
-      {
-        number: "01",
-        title: "Dining Spaces",
-        image: "/assets/img/project/3-13.jpg",
-      },
-      {
-        number: "02",
-        title: "Common Area",
-        image: "/assets/img/project/3-14.jpg",
-      },
-      {
-        number: "03",
-        title: "House Yard Design",
-        image: "/assets/img/project/3-15.jpg",
-      },
-    ],
+    id: "comercial",
+    label: "Comercial",
+    image: serviceComercialImg,
+    href: "/proyectos",
   },
 ];
 
 export const projectAcabados = [
   {
-    id: "architecture-design",
+    id: "carpinteria",
     label: "Carpintería",
-    projects: [
-      {
-        number: "01",
-        title: "Mediterrean Villa",
-        image: "/assets/img/project/3-1.jpg",
-      },
-      {
-        number: "02",
-        title: "Peninsula Villa",
-        image: "/assets/img/project/3-2.jpg",
-      },
-      {
-        number: "03",
-        title: "Parkview Resort",
-        image: "/assets/img/project/3-3.jpg",
-      },
-    ],
+    image: serviceCarpinteriaImg,
+    href: "/proyectos",
   },
   {
-    id: "interior-design",
+    id: "remodelacion",
     label: "Remodelación",
-    projects: [
-      {
-        number: "01",
-        title: "Restaurant Inn",
-        image: "/assets/img/project/3-4.jpg",
-      },
-      {
-        number: "02",
-        title: "Corporate Office",
-        image: "/assets/img/project/3-5.jpg",
-      },
-      {
-        number: "03",
-        title: "Museum Spaces",
-        image: "/assets/img/project/3-6.jpg",
-      },
-    ],
+    image: serviceRemodelacionImg,
+    href: "/proyectos",
   },
 ];
 
